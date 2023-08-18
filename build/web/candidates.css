@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+:root {
+  --primary: #00cae5;
+  --secondary: #9e9e9e;
+  --background-secon: #f3f3f3;
+  --semi-bold: 700;
+}
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+.candi-container {
+  height: 100vh;
+  background-color: var(--background-secon);
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: column;
+}
+.candi-heding {
+  margin: 2rem 0;
+  text-align: center;
+}
+.candi-container > div {
+  display: flex;
+}
+.filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 20rem;
+  height: 30rem;
+  padding: 1.5rem;
+  margin: 0 1rem 0 0;
+  background-color: #fff;
+  border-radius: 0.3rem;
+}
+.filters > h2 {
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+.filters > select {
+  padding: 0.7rem 1rem;
+  margin: 0 0 1.5rem;
+  border: 0.01rem solid var(--secondary);
+  border-radius: 0.2rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.filters > select > option {
+  border-radius: 0rem;
+}
+.filters > label {
+  font-size: 1.3rem;
+}
+.candidates {
+  width: 70rem;
+  height: 30rem;
+  border-radius: 0.3rem;
+}
+
+/* candidate list */
+.candidate-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  margin: 0 0 0.8rem 0;
+}
+.profile-icon {
+  height: 3.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.candidate-card > h3 {
+  cursor: pointer;
+  width: 20rem;
+}
+.candidate-card > p {
+  width: 10rem;
+}
+.sms-icon {
+  cursor: pointer;
+}
